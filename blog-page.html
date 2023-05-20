@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="blog-page.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="popup" id="popup">
+        <div class="closeButton">&times;</div>
+        <div class="form">
+            <h2>LOGIN</h2>
+            <div class="formElement">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter username">
+            </div>
+            <div class="formElement">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+            </div>
+            <div class="formElement">
+                <button>Login</button>
+            </div>
+            <div class="formElement">
+                <a href="#">No account? Register here!</a>
+            </div>
+        </div>
+    </div> 
+    <nav class="header">
+        <ul>
+            <li><a href="front-page.html" id="home">HOME</a></li>
+            <li><a href="feature-page.html" id="feature">FEATURE</a></li>
+            <li><a href="blog-page.html" id="blog">BLOG</a></li>
+            <li><a href="about-us.html" id="about">ABOUT US</a></li>
+        </ul>
+        <a href="#" id="show-popup">LOGIN/SIGNUP</a>
+        <script src="js/show-popup.js"></script>
+    </nav>
+    <div id="overlay"></div>
+    <div class="body">
+    <div class="card-container">
+        <h2 class="latest">Latest</h2>
+        <div class="blog-post">
+            <div class="blog-post_img">
+                <img src="images/dining.jpeg">
+            </div>
+            <div class="blog-post_info">
+                <div class="blog-post_date">
+                    <span>Published by: Lenard</span>
+                    <span>May 4, 2023</span>
+                </div>
+                <h1 class="blog-post_title">SM Seaside: Home of Food and Dining</h1>
+                <p class="blog-post_text">
+                    Looking for a dining destination that caters to the whole family? Look no further than SM Seaside Food
+                        Dining! Not only do they offer a diverse range of dining options to satisfy every taste, but they also have
+                        a buffet and restaurant that are perfect for families. With a variety of dishes to choose from, even picky
+                        eaters will find something they love.
+                </p>
+                <a href="home-of-dining.html" class="blog-post_cta">Read More</a>
+            </div>
+        </div>
+
+        <div class="blog-post">
+            <div class="blog-post_img">
+                <img src="images/cinema1.jpg">
+            </div>
+            <div class="blog-post_info">
+                <div class="blog-post_date">
+                    <span>Published By: Reniel</span>
+                    <span>May 04, 2023</span>
+                </div>
+                <h1 class="blog-post_title">Escape Reality and Immerse Yourself in the Magic of the Movies</h1>
+                <p class="blog-post_text">
+                    Seeking for a place that a filmgoer could ask for? Then SM Cinema is the place to be.
+                        Astonishing ambiance and a great place to reduce stress and bond with your family,
+                        friends, or lover. Experiencing the great cinematography of SM Cinema that will make
+                        your eyes flabbergasted from an out of this world movies.
+                </p>
+                <a href="cinema-blog.html" class="blog-post_cta">Read More</a>
+            </div>
+        </div>
+        
+        <div class="blog-post">
+            <div class="blog-post_img">
+                <img src="images/blog-skating.jpg">
+            </div>
+            <div class="blog-post_info">
+                <div class="blog-post_date">
+                    <span>Published By: Diane</span>
+                    <span>May 09, 2023</span>
+                </div>
+                <h1 class="blog-post_title">Unleash your inner Elsa at SM Seaside Ice Skating Rink</h1>
+                <p class="blog-post_text">
+                    Escape the heat and glide into fun at SM Seaside's Ice Skating Rink. Whether you're a pro or a beginner, enjoy the cool breeze and the adrenaline rush as you skate on the ice. Come join the fun and create unforgettable memories on the ice at SM Seaside
+                </p>
+                <a href="ice-skating-blog.html" class="blog-post_cta">Read More</a>
+            </div>
+        </div>
+
+        <div class="blog-post">
+            <div class="blog-post_img">
+                <img src="images/blog-arcade.jpg">
+            </div>
+            <div class="blog-post_info">
+                <div class="blog-post_date">
+                    <span>Published By: Neil</span>
+                    <span>May 09, 2023</span>
+                </div>
+                <h1 class="blog-post_title">Fun is always here at SM Seaside</h1>
+                <p class="blog-post_text">
+                    A gaming enthusiast's paradise, the arcade at SM Seaside provides a huge selection of games, including classics such as Pac-Man and Space Invaders to the newest interactive titles like Virtual Reality (VR) and motion-sensor games. It also has a lot of claw-machines and ticket-winning games!
+                </p>
+                <a href="arcade-blog.html" class="blog-post_cta">Read More</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <a href="#" class="to-top"><i class="fas fa-chevron-up"></i></a>
+    <script src="js/to-top.js"></script>
+</body>
+</html>

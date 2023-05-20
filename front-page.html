@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore SM Seaside</title>
+    <link rel="stylesheet" href="front-page.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="popup" id="popup">
+        <div class="closeButton">&times;</div>
+        <div class="form">
+            <h2>LOGIN</h2>
+            <div class="formElement">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter username">
+            </div>
+            <div class="formElement">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+            </div>
+            <div class="formElement">
+                <button>Login</button>
+            </div>
+            <div class="formElement">
+                <a href="#">No account? Register here!</a>
+            </div>
+        </div>
+    </div> 
+    <div id="overlay"></div>
+    <nav class="header">
+        <ul>
+            <li><a href="front-page.html" id="home">HOME</a></li>
+            <li><a href="feature-page.html" id="feature">FEATURE</a></li>
+            <li><a href="blog-page.html" id="blog">BLOG</a></li>
+            <li><a href="about-us.html" id="about">ABOUT US</a></li>
+        </ul>
+        <a href="#" id="show-popup">LOGIN/SIGNUP</a>
+        <script src="js/show-popup.js"></script>
+    </nav>
+    <script src="js/header-scroll.js"></script>
+    <div class="banner">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="video/seaside-vid.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <h1>SM Seaside</h1>
+            <h3>Where shopping, dining, and entertainment meet!</h3>
+        </div>
+    </div>
+    <div class="home">
+        <p>Looking for a one-stop destination that offers a complete and satisfying experience? Look no further than SM Seaside. Located in the beautiful city of Cebu, SM Seaside is quickly becoming a must-visit destination for locals and tourists alike.
+            <br><br>
+            Boasting a modern and spacious design, SM Seaside offers a wide variety of stores that cater to everyone's needs. From luxury brands to local boutiques, visitors can find everything they're looking for in one convenient location. And when it's time to take a break from shopping, SM Seaside has plenty of entertainment options to keep visitors of all ages engaged and entertained. From ice skating and arcade games to movies and live performances, there's always something exciting happening at SM Seaside.One of the standout features of SM Seaside is its massive food court, which offers a diverse selection of local and international cuisines. Whether you're craving Filipino comfort food or Japanese sushi, you'll find something delicious to eat at the food court. And with its prime location by the sea, SM Seaside offers visitors a breathtaking view of the ocean and a refreshing sea breeze that adds to the charm of the place.
+            <br><br>
+            So why should you visit SM Seaside? With its combination of shopping, entertainment, and scenic views, SM Seaside offers visitors a complete and satisfying experience that's hard to find elsewhere. Whether you're looking for a day out with family and friends or just want to indulge in some retail therapy, SM Seaside has everything you need to make your visit a memorable one. So what are you waiting for? Come and experience the ultimate destination for shopping, entertainment, and scenic views at SM Seaside.</p>
+    </div>
+    <h1 id="h1-body">EXPLORE THE WONDERS OF SM SEASIDE</h1>
+    <div class="feature-container" id="categories">
+        <a href="shopping-features.html">
+            <article class="feature-card">
+                <figure class="feature-image">
+                    <img src="images/shopping.png">
+                </figure>
+                <div class="feature-content">
+                    <h3 class="card-title">SHOPPING</h3>
+                </div>
+            </article>
+        </a>
+        <a href="dining-features.html">
+            <article class="feature-card">
+            <figure class="feature-image">
+                <img src="images/dining.png">
+            </figure>
+            <div class="feature-content">
+                <h3 class="card-title">DINING</h3>
+            </div>
+        </article></a>
+        <a href="entertainment-features.html">
+            <article class="feature-card">
+                <figure class="feature-image">
+                    <img src="images/entertainment.png">
+                </figure>
+                <div class="feature-content">
+                    <h3 class="card-title">ENTERTAINMENT</h3>
+                </div>
+            </article>
+        </a>
+    </div>
+    <a href="#" class="to-top"><i class="fas fa-chevron-up"></i></a>
+    <script src="js/to-top.js"></script>
+</body>
+</html>

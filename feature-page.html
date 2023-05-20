@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Attractions</title>
+    <link rel="stylesheet" href="feature-page.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+</head>
+<body>  
+    <div class="popup" id="popup">
+        <div class="closeButton">&times;</div>
+        <div class="form">
+            <h2>LOGIN</h2>
+            <div class="formElement">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter username">
+            </div>
+            <div class="formElement">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+            </div>
+            <div class="formElement">
+                <button>Login</button>
+            </div>
+            <div class="formElement">
+                <a href="#">No account? Register here!</a>
+            </div>
+        </div>
+    </div> 
+    <nav class="header">
+        <ul>
+            <li><a href="front-page.html" id="home">HOME</a></li>
+            <li><a href="feature-page.html" id="feature">FEATURE</a></li>
+            <li><a href="blog-page.html" id="blog">BLOG</a></li>
+            <li><a href="about-us.html" id="about">ABOUT US</a></li>
+        </ul>
+        <a href="#" id="show-popup">LOGIN/SIGNUP</a>
+        <script src="js/show-popup.js"></script>
+    </nav>
+    <div id="overlay"></div>
+    <script src="js/header-scroll.js"></script>
+    <div class="banner">
+        <div class="content">
+            <h3>Featured Attraction of the Month</h3>
+            <h1>Ice Skating</h1>
+            <p>One of the largest ice skating rink in the Philippines, SM Seaside is known for its Ice Skating rink which is very popular with children, even with Adults!</p>
+            <a href="#categories">SEE MORE ATTRACTIONS &rarr;</a>
+        </div>
+    </div>
+    <div class="feature-container" id="categories">
+        <a href="shopping-features.html">
+            <article class="feature-card">
+                <figure class="feature-image">
+                    <img src="images/shopping.png">
+                </figure>
+                <div class="feature-content">
+                    <h3 class="card-title">SHOPPING</h3>
+                </div>
+            </article>
+        </a>
+        <a href="dining-features.html">
+            <article class="feature-card">
+            <figure class="feature-image">
+                <img src="images/dining.png">
+            </figure>
+            <div class="feature-content">
+                <h3 class="card-title">DINING</h3>
+            </div>
+        </article></a>
+        <a href="entertainment-features.html">
+            <article class="feature-card">
+                <figure class="feature-image">
+                    <img src="images/entertainment.png">
+                </figure>
+                <div class="feature-content">
+                    <h3 class="card-title">ENTERTAINMENT</h3>
+                </div>
+            </article>
+        </a>
+    </div>
+    <a href="#" class="to-top"><i class="fas fa-chevron-up"></i></a>
+    <script src="js/to-top.js"></script>
+</body>
+</html>

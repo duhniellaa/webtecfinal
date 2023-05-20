@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#overlay
+{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 500;
+}
+
+.popup{
+    position: fixed;
+    top: -150%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%,-50%) scale(1.25);
+    width: 400px;
+    padding: 20px 30px;
+    background: #fff;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    align-items: center;
+}
+
+.popup.active{
+    z-index: 9999;
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup .closeButton{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background: #888;
+    color: #fff;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.popup .form h2{
+    text-align: center;
+    color: #222;
+    margin: 10px 0px 20px;
+    font-size: 25px;
+}
+
+.popup .form .formElement{
+    margin: 15px 0px;
+}
+
+.popup .form .formElement label{
+    font-size: 14px;
+    color: #222;
+}
+
+.popup .form .formElement input[type="text"],
+.popup .form .formElement input[type="password"]{
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.popup .form .formElement button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #1C3879;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.popup .form .formElement a{
+    display: block;
+    text-align: right;
+    font-size: 10px;
+    color: #363636;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.banner{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    height: 100vh;
+    z-index: -1;
+}
+
+.home{
+    position: relative;
+    text-align: center;
+    padding: 0 50px 0;
+    margin-top: 50px;
+    z-index: -1;
+}
+
+.home p{
+    text-align: justify;
+    width: 75%;
+    left: 0;
+    right: 0;
+    margin: 20px auto;
+}
+
+.header{
+    transition: 0.5s;
+}
+
+.header-scrolled{
+    transition: 0.5s;
+    background-color: #004AB8;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    z-index: 12;
+}
+
+nav #show-popup{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 17px;
+    border: 2px solid #fff;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-right: 50px;
+    transition: 0.5s;
+}
+
+nav #show-popup:hover{
+    transition: 0.5s;
+    color: #000;
+    background-color: #fff;
+}
+
+nav ul{
+    margin-left: 30px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+.menu{
+    margin: auto;
+    width: 700px;
+}
+
+.menu a{
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.menu a:hover{
+    transition: 0.5s;
+    background-color: #fff;
+    color: #1C3879;
+}
+
+.content{
+    text-align: center;
+    position: relative;
+    z-index: -1;
+}
+
+.content h1{
+    font-size: 100px;
+    color: #fff;
+    font-weight: 500px;
+}
+
+.content h3{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+    margin-top: -20px;
+}
+
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 15px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 50px;
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: brightness(0.5);
+}
+
+@media (min-aspect-ratio:16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+#home:hover{
+    text-decoration:overline;
+}
+
+#feature:hover{
+    text-decoration:overline;
+}
+
+#blog:hover{
+    text-decoration:overline;
+}
+
+#about:hover{
+    text-decoration:overline;
+}
+
+#h1-body{
+    font-size: 55px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display';
+    width: 100%;
+    background-color: #E2F6FD;
+    padding: 20px 0;
+}
+
+.feature-container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 250px);    
+    gap: 2rem;
+    justify-content: center;
+}
+
+.feature-container a{
+    text-decoration: none;
+}
+
+.feature-image{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.feature-image img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+}
+
+.feature-image:hover{
+    filter: brightness(0.5);
+    transition: 0.5s;
+}
+
+.feature-card{
+    background: #004AB8;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.feature-card:hover{
+    box-shadow: 0 4px 20px 0 rgba(34, 68, 123, 0.2);
+    cursor: pointer;
+}
+
+.feature-content{
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+.to-top {
+    background: black;
+    position: fixed;
+    bottom: 16px;
+    right:32px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:32px;
+    color: #fff;
+    text-decoration: none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s;
+  }
+  
+  .to-top.active {
+    bottom:32px;
+    pointer-events: auto;
+    opacity:1;
+  }
